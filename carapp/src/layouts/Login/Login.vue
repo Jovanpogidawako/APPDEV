@@ -1,7 +1,7 @@
 Robert Joseph Aguba
 <template>
   <q-form @submit.prevent="login">
-    <q-input v-model="email" label="Email" :dense="dense" />
+    <q-input v-model="email" label="Username" :dense="dense" />
     <q-input v-model="password" label="Password" :dense="dense" />
     <q-btn
       unelevated
@@ -22,7 +22,7 @@ import { Notify } from "quasar"; // Import the Notify component
 export default {
   data() {
     return {
-      email: "",
+      username: "",
       password: "",
       errorMsg: "",
     };
@@ -37,7 +37,7 @@ export default {
 
       try {
         const response = await api.post("api/login", {
-          email: this.email,
+         username: this.username,
           password: this.password,
         });
 
@@ -55,7 +55,7 @@ export default {
           sessionStorage.setItem("role", role);
 
           // Redirect to the dashboard
-          if (user_role === "admin") {
+          if (role === "admin") {
             this.$router.push("/");
           } else if (user_role === "cashier") {
             this.$router.push("/POS");
