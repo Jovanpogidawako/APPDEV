@@ -1,3 +1,4 @@
+Robert Joseph Aguba
 <template>
   <q-form @submit.prevent="login">
     <q-input v-model="email" label="Email" :dense="dense" />
@@ -16,12 +17,12 @@
 </template>
 <script>
 import { api } from "src/boot/axios";
-import { Notify } from "quasar";
+import { Notify } from "quasar"; // Import the Notify component
 
 export default {
   data() {
     return {
-      email: "", // Changed from 'username'
+      email: "",
       password: "",
       errorMsg: "",
     };
@@ -35,43 +36,51 @@ export default {
       }
 
       try {
-        const response = await api.post('/api/login', {
+        const response = await api.post("/api/login", {
           email: this.email,
           password: this.password,
         });
 
         console.log(response.data);
-        if (response.data.error) {
+        if (response.data.msg === "error") {
           this.errorMsg = "Invalid email or password";
         } else {
+          // Assuming your token is available in response.data.token
           const token = response.data.token;
-          const role = response.data.role;
+          const user_role = response.data.user_role;
+          console.log(response.data);
 
+          // Store the token in session storage
           sessionStorage.setItem("token", token);
-          sessionStorage.setItem("role", role);
+          sessionStorage.setItem("user_role", user_role);
 
-          if (role === "") {
-            this.$router.push("/home");
-          } else if (role === "cashier") {
-            this.$router.push("/layouts");
+          // Redirect to the dashboard
+          if (user_role === "admin") {
+            this.$router.push("/");
+          } else if (user_role === "cashier") {
+            this.$router.push("/POS");
           }
 
+          // Display a success notification
           Notify.create({
             message: "Login successful!",
             color: "teal",
             position: "bottom",
-            timeout: 3000,
+            timeout: 3000, // Adjust timeout as needed
           });
         }
       } catch (error) {
         console.error("Error during login:", error);
 
+        // Display an error notification
         Notify.create({
           message: "Error during login. Please try again.",
           color: "negative",
           position: "bottom",
-          timeout: 3000,
+          timeout: 3000, // Adjust timeout as needed
         });
+
+        // Handle other errors if needed
       }
     },
   },
