@@ -36,7 +36,7 @@ export default {
       }
 
       try {
-        const response = await api.post("/api/login", {
+        const response = await api.post("api/login", {
           email: this.email,
           password: this.password,
         });
@@ -47,12 +47,12 @@ export default {
         } else {
           // Assuming your token is available in response.data.token
           const token = response.data.token;
-          const user_role = response.data.user_role;
+          const role = response.data.role;
           console.log(response.data);
 
           // Store the token in session storage
           sessionStorage.setItem("token", token);
-          sessionStorage.setItem("user_role", user_role);
+          sessionStorage.setItem("role", role);
 
           // Redirect to the dashboard
           if (user_role === "admin") {
