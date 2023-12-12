@@ -1,72 +1,72 @@
 <template>
-  <q-page>
-    <q-container>
-      <q-form @submit.prevent="register">
-        <q-input
-          v-model="username"
-          label="Username"
-          outlined
-          dense
-        ></q-input>
+  <q-page class="q-pa-md">
+    <q-card>
+      <q-card-section class="q-mb-md">
+        <div class="text-h6">Register</div>
+      </q-card-section>
 
-        <q-input
-          v-model="email"
-          label="Email"
-          type="email"
-          outlined
-          dense
-        ></q-input>
-
-        <q-input
-          v-model="password"
-          label="Password"
-          type="password"
-          outlined
-          dense
-        ></q-input>
-
-        <q-btn
-          type="submit"
-          label="Register"
-          color="primary"
-          class="q-mt-md"
-        ></q-btn>
-      </q-form>
-    </q-container>
+      <q-card-section>
+        <q-form @submit.prevent="register">
+          <q-input v-model="username" label="Username" />
+          <q-input v-model="password" label="Password" type="password" />
+          <q-btn
+            color="primary"
+            label="Register"
+            class="q-mt-md"
+            :loading="loading"
+            :disable="loading"
+            type="submit"
+          />
+        </q-form>
+      </q-card-section>
+    </q-card>
   </q-page>
 </template>
 
 <script>
-import { api } from "src/boot/axios";
+import { Notify } from 'quasar';
+import {api} from 'src/boot/axios.js';
+
 export default {
   data() {
     return {
       username: '',
-      email: '',
       password: '',
+      loading: false,
     };
   },
   methods: {
     async register() {
       try {
-        // Send registration request to the backend (CI4 API)
-        const response = await this.ap.post('http://your-ci4-api/register', {
+        this.loading = true;
+
+        const response = await api.post('api/register/', {
           username: this.username,
-          email: this.email,
           password: this.password,
         });
 
-        // Handle the response accordingly (e.g., show success message, navigate to login)
-        console.log(response.data);
+        if (response.data.success) {
+          // Handle successful registration, redirect, etc.
+          Notify.create({
+            message: 'Registration successful!',
+            color: 'teal',
+          });
+        } else {
+          Notify.create({
+            message: response.data.error || 'Registration failed. Please try again.',
+            color: 'negative',
+          });
+        }
       } catch (error) {
-        console.error('Registration failed:', error);
-        // Handle registration error (e.g., show an error message)
+        console.error('Error during registration:', error);
+        Notify.create({
+          message: 'Error during registration. Please try again.',
+          color: 'negative',
+        });
+      } finally {
+        this.loading = false;
       }
     },
   },
 };
 </script>
-
-<style scoped>
-/* Add your component styles here */
-</style>

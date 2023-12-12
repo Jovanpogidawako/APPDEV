@@ -1,86 +1,70 @@
-Robert Joseph Aguba
 <template>
-  <q-form @submit.prevent="login">
-    <q-input v-model="email" label="Username" :dense="dense" />
-    <q-input v-model="password" label="Password" :dense="dense" />
-    <q-btn
-      unelevated
-      rounded
-      color="primary"
-      label="Login"
-      class="full-width q-ma-lg"
-      outline
-      type="submit"
-    />
-  </q-form>
+  <q-page class="q-pa-md">
+    <q-card>
+      <q-card-section class="q-mb-md">
+        <div class="text-h6">Login</div>
+      </q-card-section>
 
+      <q-card-section>
+        <q-form @submit.prevent="login">
+          <q-input v-model="username" label="Username" />
+          <q-input v-model="password" label="Password" type="password" />
+          <q-btn
+            color="primary"
+            label="Login"
+            class="q-mt-md"
+            :loading="loading"
+            :disable="loading"
+            type="submit"
+          />
+        </q-form>
+      </q-card-section>
+    </q-card>
+  </q-page>
 </template>
+
 <script>
-import { api } from "src/boot/axios";
-import { Notify } from "quasar"; // Import the Notify component
+import { Notify } from 'quasar';
+import axios from 'axios';
 
 export default {
   data() {
     return {
-      username: "",
-      password: "",
-      errorMsg: "",
+      username: '',
+      password: '',
+      loading: false,
     };
   },
   methods: {
     async login() {
-      // Client-side check for empty password
-      if (this.password.trim() === "") {
-        this.errorMsg = "Password cannot be empty";
-        return;
-      }
-
       try {
-        const response = await api.post("api/login", {
-         username: this.username,
+        this.loading = true;
+
+        const response = await axios.post('http://backapp.test/api/login', {
+          username: this.username,
           password: this.password,
         });
 
-        console.log(response.data);
-        if (response.data.msg === "error") {
-          this.errorMsg = "Invalid email or password";
-        } else {
-          // Assuming your token is available in response.data.token
-          const token = response.data.token;
-          const role = response.data.role;
-          console.log(response.data);
-
-          // Store the token in session storage
-          sessionStorage.setItem("token", token);
-          sessionStorage.setItem("role", role);
-
-          // Redirect to the dashboard
-          if (role === "admin") {
-            this.$router.push("/");
-          } else if (user_role === "cashier") {
-            this.$router.push("/POS");
-          }
-
-          // Display a success notification
+        if (response.data.message === 'Login successful') {
+          // Handle successful login, redirect, etc.
           Notify.create({
-            message: "Login successful!",
-            color: "teal",
-            position: "bottom",
-            timeout: 3000, // Adjust timeout as needed
+            message: 'Login successful!',
+            color: 'teal',
+          });
+        } else {
+          Notify.create({
+            message: 'Invalid credentials',
+            color: 'negative',
           });
         }
       } catch (error) {
-        console.error("Error during login:", error);
-
-        // Display an error notification
+        console.error('Error during login:', error);
         Notify.create({
-          message: "Error during login. Please try again.",
-          color: "negative",
-          position: "bottom",
-          timeout: 3000, // Adjust timeout as needed
+          message: 'Error during login. Please try again.',
+          color: 'negative',
         });
-
-        // Handle other errors if needed
+      } finally {
+        this.loading = false;
       }
     },
   },
