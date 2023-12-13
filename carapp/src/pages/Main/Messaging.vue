@@ -1,7 +1,7 @@
 <template>
   <div class="WAL position-relative bg-grey-4" :style="style">
     <q-layout view="lHh Lpr lFf" class="WAL__layout shadow-3" container>
-      <q-header elevated>
+      <q-header>
         <q-toolbar class="bg-grey-3 text-black">
           <q-btn
             round
@@ -245,6 +245,7 @@ export default {
 }
 </script>
 
+
 <style lang="sass">
 .WAL
   width: 100%
@@ -259,13 +260,13 @@ export default {
     top: 0
     width: 100%
 
-
   &__layout
     margin: 0 auto
     z-index: 4000
     height: 100%
-    width: 90%
-    max-width: 950px
+    /* Remove the width and max-width properties */
+    /* width: 90% */
+    /* max-width: 950px */
     border-radius: 5px
 
   &__field.q-field--outlined .q-field__control:before
@@ -293,4 +294,6 @@ export default {
 .conversation__more
   margin-top: 0!important
   font-size: 1.4rem
+
+
 </style>

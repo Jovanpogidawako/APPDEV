@@ -33,6 +33,13 @@
   </div>
 
   <q-space />
+  <q-btn
+    to="/mess"
+    tag="router-link"
+    round
+    flat
+    icon="message"
+  />
 <div class="q-gutter-sm row items-center no-wrap">
   <q-btn round dense flat color="white-8" icon="notifications">
     <q-badge color="red" text-color="white" floating>
@@ -101,7 +108,7 @@
       </q-list>
     </q-drawer>
     </q-drawer>
-    <Click/>
+
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -112,13 +119,13 @@
 <script>
 import { ref } from 'vue'
 import Menu from "src/components/Menu.vue"
-import Click from "src/components/Click.vue"
+
 
 export default {
   name:'Main',
   components:{
     Menu,
-    Click
+
   },
   data(){
     return {

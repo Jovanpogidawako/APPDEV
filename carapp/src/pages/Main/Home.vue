@@ -1,36 +1,271 @@
 <template>
-  <q-page class="q-pa-sm">
-    <div class="row q-col-gutter-sm q-py-sm">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <bar-chart></bar-chart>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <line-chart></line-chart>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <scatter-plot></scatter-plot>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <pie-chart></pie-chart>
-      </div>
-    </div>
-  </q-page>
+  <div class="q-pa-md row items-start q-gutter-md">
+    <q-card class="my-card" flat bordered>
+      <q-card-section horizontal>
+        <q-card-section class="q-pt-xs">
+          <div class="text-overline">Overline</div>
+          <div class="text-h5 q-mt-sm q-mb-xs">Title</div>
+          <div class="text-caption text-grey">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+        </q-card-section>
+
+        <q-card-section class="col-5 flex flex-center">
+          <q-img
+            class="rounded-borders"
+            src="https://cdn.quasar.dev/img/parallax2.jpg"
+          />
+        </q-card-section>
+      </q-card-section>
+
+      <q-separator />
+
+      <q-card-actions>
+        <q-btn flat round icon="event" />
+        <q-btn flat>
+          7:30PM
+        </q-btn>
+        <q-btn flat color="primary">
+          Reserve
+        </q-btn>
+      </q-card-actions>
+    </q-card>
+
+    <q-card class="my-card" flat bordered>
+      <q-item>
+        <q-item-section avatar>
+          <q-avatar>
+            <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+          </q-avatar>
+        </q-item-section>
+
+        <q-item-section>
+          <q-item-label>Title</q-item-label>
+          <q-item-label caption>
+            Subhead
+          </q-item-label>
+        </q-item-section>
+      </q-item>
+
+      <q-separator />
+
+      <q-card-section horizontal>
+        <q-card-section>
+          {{ lorem }}
+        </q-card-section>
+
+        <q-separator vertical />
+
+        <q-card-section class="col-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </q-card-section>
+      </q-card-section>
+    </q-card>
+
+    <q-card class="my-card">
+      <q-card-section horizontal>
+        <q-img
+          class="col-5"
+          src="https://cdn.quasar.dev/img/parallax1.jpg"
+        />
+
+        <q-card-section>
+          {{ lorem }}
+        </q-card-section>
+      </q-card-section>
+
+      <q-separator />
+
+      <q-card-actions>
+        <q-btn flat round icon="event" />
+        <q-btn flat>
+          5:30PM
+        </q-btn>
+        <q-btn flat>
+          7:00PM
+        </q-btn>
+        <q-btn flat color="primary">
+          Reserve
+        </q-btn>
+      </q-card-actions>
+    </q-card>
+
+    <q-card class="my-card">
+      <q-card-section horizontal>
+        <q-img
+          class="col"
+          src="https://cdn.quasar.dev/img/parallax2.jpg"
+        />
+
+        <q-card-actions vertical class="justify-around">
+          <q-btn flat round color="red" icon="favorite" />
+          <q-btn flat round color="accent" icon="bookmark" />
+          <q-btn flat round color="primary" icon="share" />
+        </q-card-actions>
+      </q-card-section>
+    </q-card>
+    <q-card class="my-card">
+      <q-card-section horizontal>
+        <q-img
+          class="col-5"
+          src="https://cdn.quasar.dev/img/parallax1.jpg"
+        />
+
+        <q-card-section>
+          {{ lorem }}
+        </q-card-section>
+      </q-card-section>
+
+      <q-separator />
+
+      <q-card-actions>
+        <q-btn flat round icon="event" />
+        <q-btn flat>
+          5:30PM
+        </q-btn>
+        <q-btn flat>
+          7:00PM
+        </q-btn>
+        <q-btn flat color="primary">
+          Reserve
+        </q-btn>
+      </q-card-actions>
+    </q-card>
+    <q-card class="my-card">
+      <q-card-section horizontal>
+        <q-img
+          class="col-5"
+          src="https://cdn.quasar.dev/img/parallax1.jpg"
+        />
+
+        <q-card-section>
+          {{ lorem }}
+        </q-card-section>
+      </q-card-section>
+
+      <q-separator />
+
+      <q-card-actions>
+        <q-btn flat round icon="event" />
+        <q-btn flat>
+          5:30PM
+        </q-btn>
+        <q-btn flat>
+          7:00PM
+        </q-btn>
+        <q-btn flat color="primary">
+          Reserve
+        </q-btn>
+      </q-card-actions>
+    </q-card>
+    <q-card class="my-card">
+      <q-card-section horizontal>
+        <q-img
+          class="col-5"
+          src="https://cdn.quasar.dev/img/parallax1.jpg"
+        />
+
+        <q-card-section>
+          {{ lorem }}
+        </q-card-section>
+      </q-card-section>
+
+      <q-separator />
+
+      <q-card-actions>
+        <q-btn flat round icon="event" />
+        <q-btn flat>
+          5:30PM
+        </q-btn>
+        <q-btn flat>
+          7:00PM
+        </q-btn>
+        <q-btn flat color="primary">
+          Reserve
+        </q-btn>
+      </q-card-actions>
+    </q-card>
+    <q-card class="my-card">
+      <q-card-section horizontal>
+        <q-img
+          class="col-5"
+          src="https://cdn.quasar.dev/img/parallax1.jpg"
+        />
+
+        <q-card-section>
+          {{ lorem }}
+        </q-card-section>
+      </q-card-section>
+
+      <q-separator />
+
+      <q-card-actions>
+        <q-btn flat round icon="event" />
+        <q-btn flat>
+          5:30PM
+        </q-btn>
+        <q-btn flat>
+          7:00PM
+        </q-btn>
+        <q-btn flat color="primary">
+          Reserve
+        </q-btn>
+      </q-card-actions>
+    </q-card>
+    <q-card class="my-card">
+      <q-card-section horizontal>
+        <q-img
+          class="col-5"
+          src="https://cdn.quasar.dev/img/parallax1.jpg"
+        />
+
+        <q-card-section>
+          {{ lorem }}
+        </q-card-section>
+      </q-card-section>
+
+      <q-separator />
+
+      <q-card-actions>
+        <q-btn flat round icon="event" />
+        <q-btn flat>
+          5:30PM
+        </q-btn>
+        <q-btn flat>
+          7:00PM
+        </q-btn>
+        <q-btn flat color="primary">
+          Reserve
+        </q-btn>
+      </q-card-actions>
+    </q-card>
+    <q-card class="my-card">
+      <q-card-section horizontal>
+        <q-img
+          class="col-5"
+          src="https://cdn.quasar.dev/img/parallax1.jpg"
+        />
+
+        <q-card-section>
+          {{ lorem }}
+        </q-card-section>
+      </q-card-section>
+
+      <q-separator />
+
+      <q-card-actions>
+        <q-btn flat round icon="event" />
+        <q-btn flat>
+          5:30PM
+        </q-btn>
+        <q-btn flat>
+          7:00PM
+        </q-btn>
+        <q-btn flat color="primary">
+          Reserve
+        </q-btn>
+      </q-card-actions>
+    </q-card>
+
+  </div>
 </template>
-
-<script>
-import {defineComponent, defineAsyncComponent} from 'vue'
-
-export default defineComponent({
-  name: "Charts",
-  components: {
-    PieChart: defineAsyncComponent(() => import('components/charts/PieChart.vue')),
-    ScatterPlot: defineAsyncComponent(() => import('components/charts/ScatterPlot.vue')),
-    LineChart: defineAsyncComponent(() => import('components/charts/LineChart.vue')),
-    BarChart: defineAsyncComponent(() => import('components/charts/BarChart.vue')),
-  },
-})
-</script>
-
-<style scoped>
-
-</style>

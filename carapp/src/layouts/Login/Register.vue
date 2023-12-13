@@ -40,7 +40,7 @@ export default {
       try {
         this.loading = true;
 
-        const response = await api.post('api/register/', {
+        const response = await api.post('register/', {
           username: this.username,
           password: this.password,
         });
