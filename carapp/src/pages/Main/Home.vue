@@ -170,7 +170,7 @@
         </q-card-section>
       </q-card-section>
 
-
+      <q-separator />
 
       <q-card-actions>
         <q-btn flat round icon="event" />
@@ -200,14 +200,7 @@
       <q-separator />
 
       <q-card-actions>
-        <q-btn flat round icon="event" />
-        <q-btn flat>
-          5:30PM
-        </q-btn>
-        <q-btn flat>
-          7:00PM
-        </q-btn>
-        <q-btn flat color="primary" >
+        <q-btn flat color="primary" @click="navigateToSchedulingPage()">
           Reserve
         </q-btn>
       </q-card-actions>
@@ -269,3 +262,14 @@
 
   </div>
 </template>
+<script>
+
+export default {
+  methods: {
+    navigateToSchedulingPage() {
+      // Use Vue Router to navigate to the scheduling page
+      this.$router.push('/sched');
+    },
+  },
+};
+</script>
