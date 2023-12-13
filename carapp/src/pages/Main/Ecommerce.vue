@@ -21,7 +21,7 @@
                 </q-item-section>
               </q-item>
               <q-item class="q-py-none text-weight-bold text-indigo text-caption cursor-pointer"
-                      style="min-height: 10px">
+                      style="margin-bottom: 20px">
                 View All
               </q-item>
             </q-list>

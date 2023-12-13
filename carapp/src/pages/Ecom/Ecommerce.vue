@@ -21,12 +21,6 @@
                                                          style="text-decoration: line-through">₹3,699</span>
                 <span class="q-ml-md text-caption text-green-8 text-weight-bolder q-mt-md">20% off</span>
               </div>
-              <!--<div class="text-subtitle1">-->
-              <!--$・Italian, Cafe-->
-              <!--</div>-->
-              <!--<div class="text-caption text-grey">-->
-              <!--Small plates, salads & sandwiches in an intimate setting.-->
-              <!--</div>-->
             </q-card-section>
             <q-separator></q-separator>
             <q-card-actions>
@@ -35,6 +29,7 @@
               </q-btn>
             </q-card-actions>
           </q-card>
+          <q-space></q-space>
           <q-card @click="$router.push('/details')" class="cursor-pointer" :class="class_val"
                   @mouseover="class_val='my-card shadow-20'"
                   @mouseleave="class_val='my-card shadow-'">
@@ -56,12 +51,6 @@
                                                          style="text-decoration: line-through">₹3,699</span>
                 <span class="q-ml-md text-caption text-green-8 text-weight-bolder q-mt-md">20% off</span>
               </div>
-              <!--<div class="text-subtitle1">-->
-              <!--$・Italian, Cafe-->
-              <!--</div>-->
-              <!--<div class="text-caption text-grey">-->
-              <!--Small plates, salads & sandwiches in an intimate setting.-->
-              <!--</div>-->
             </q-card-section>
             <q-separator></q-separator>
             <q-card-actions>

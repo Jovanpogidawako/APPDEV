@@ -12,7 +12,7 @@ const routes = [
       { path: '/mess', component: () => import('pages/Main/Messaging.vue') },
       { path: '/prof', component: () => import('pages/Main/my_profile.vue') },
       { path: '/details', component: () => import('pages/Main/details.vue') },
-      { path: '/charts', component: () => import('pages/Main/Charts.vue') }
+
 
 
     ]
@@ -34,8 +34,11 @@ const routes = [
     component: () => import('layouts/Login/Register.vue')
   },
   {
-    path:'/user',
-    component: () => import('layouts/Userside.vue')
+    path:'/admin',
+    component: () => import('layouts/Admin.vue'),
+    children:[
+      { path: '/charts', component: () => import('pages/Main/Charts.vue') }
+    ],
   },
 
 
