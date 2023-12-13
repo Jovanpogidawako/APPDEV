@@ -170,7 +170,7 @@
         </q-card-section>
       </q-card-section>
 
-      <q-separator />
+
 
       <q-card-actions>
         <q-btn flat round icon="event" />
