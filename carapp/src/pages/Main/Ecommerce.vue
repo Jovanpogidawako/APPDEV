@@ -30,7 +30,7 @@
       </div>
       <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
         <div class="q-pa-md row items-start q-gutter-md">
-          <q-card @click="$router.push('/details')" class="cursor-pointer" :class="class_val"
+          <q-card @click="$router.push('/check')" class="cursor-pointer" :class="class_val"
                   @mouseover="class_val='my-card shadow-20'"
                   @mouseleave="class_val='my-card shadow-'">
             <q-img src="https://miipublications.com.my/wp-content/uploads/2019/10/shop-online-760x490.jpg"></q-img>

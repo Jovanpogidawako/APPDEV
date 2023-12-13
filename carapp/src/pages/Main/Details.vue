@@ -59,9 +59,9 @@
               <div class="text-caption text-subtitle2 text-grey-8 text-weight-bold">Fastest delivery: <span
                 class="text-black">Mon, Mar 2 by 9pm</span></div>
             </div>
-            <div class="q-mt-md">
-              <q-btn class="q-mt-md" color="orange-9" icon="shopping_cart" label="Add to cart"/>
-              <q-btn class="q-mt-md q-ml-md" color="orange-8" icon="shopping_cart" label="Buy now"/>
+            <div class="q-mt-md" >
+              <q-btn class="q-mt-md"  color="orange-9" icon="shopping_cart" label="Add to cart" to="/cart"/>
+              <q-btn class="q-mt-md q-ml-md" color="orange-8" icon="shopping_cart" label="Buy now" to= "/check"/>
             </div>
           </div>
           <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 q-mt-md q-pt-xs q-pl-lg">
@@ -428,31 +428,35 @@
 </template>
 
 <script>
-  export default {
-    name: "details.vue",
-    data() {
-      return {
-        slide: 1,
-        tab: 'Specifications',
-        rating_point: 4.3,
-        rat_5: 5,
-        rat_4: 4,
-        rat_3: 3,
-        rat_2: 2,
-        rat_1: 1,
-      }
+export default {
+  name: "details.vue",
+  data() {
+    return {
+      slide: 1,
+      tab: 'Specifications',
+      rating_point: 4.3,
+      rat_5: 5,
+      rat_4: 4,
+      rat_3: 3,
+      rat_2: 2,
+      rat_1: 1,
+    };
+  },
+  computed: {
+    win_width() {
+      return this.$q.screen.width - 59;
     },
-    computed: {
-      win_width() {
-        return this.$q.screen.width - 59;
-      },
-      win_height() {
-        return this.$q.screen.height - 0;
-      }
-    }
-  }
+    win_height() {
+      return this.$q.screen.height - 0;
+    },
+  },
+  methods: {
+    goTocart() {
+      this.$router.push('/check');
+    },
+  },
+};
 </script>
 
 <style scoped>
-
 </style>

@@ -11,7 +11,9 @@ const routes = [
       { path: '/track', component: () => import('pages/Main/Tracking.vue') },
       { path: '/mess', component: () => import('pages/Main/Messaging.vue') },
       { path: '/prof', component: () => import('pages/Main/my_profile.vue') },
-      { path: '/details', component: () => import('pages/Main/details.vue') },
+      { path: '/details', component: () => import('pages/Main/Details.vue') },
+      { path: '/check', component: () => import('pages/Ecom/Checkout.vue') },
+      { path: '/cart', component: () => import('pages/Ecom/AddtoCart.vue') },
 
 
 
@@ -37,7 +39,10 @@ const routes = [
     path:'/admin',
     component: () => import('layouts/Admin.vue'),
     children:[
-      { path: '/charts', component: () => import('pages/Main/Charts.vue') }
+      { path: '/charts', component: () => import('pages/Main/Charts.vue') },
+
+
+
     ],
   },
 
