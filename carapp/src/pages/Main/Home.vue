@@ -1,7 +1,7 @@
 <template>
   <div class="q-pa-md row items-start q-gutter-md">
     <q-card class="my-card" flat bordered>
-      <q-card-section horizontal>
+      <q-card-section horizontal class="col-12">
         <q-card-section class="q-pt-xs">
           <div class="text-overline">Overline</div>
           <div class="text-h5 q-mt-sm q-mb-xs">Title</div>
@@ -13,7 +13,7 @@
         <q-card-section class="col-5 flex flex-center">
           <q-img
             class="rounded-borders"
-            src="https://cdn.quasar.dev/img/parallax2.jpg"
+            src="https://cdn.pixabay.com/photo/2017/03/27/14/56/auto-2179220_1280.jpg"
           />
         </q-card-section>
       </q-card-section>
@@ -49,7 +49,7 @@
 
       <q-separator />
 
-      <q-card-section horizontal>
+      <q-card-section horizontal class="col-12">
         <q-card-section>
           {{ lorem }}
         </q-card-section>
@@ -63,10 +63,10 @@
     </q-card>
 
     <q-card class="my-card">
-      <q-card-section horizontal>
+      <q-card-section horizontal class="col-12">
         <q-img
           class="col-5"
-          src="https://cdn.quasar.dev/img/parallax1.jpg"
+          src="https://www.kbb.com/wp-content/uploads/2021/02/2022-kia-carnival-front-3qtr-16x9-2.jpg?w=918"
         />
 
         <q-card-section>
@@ -91,10 +91,10 @@
     </q-card>
 
     <q-card class="my-card">
-      <q-card-section horizontal>
+      <q-card-section horizontal class="col-12">
         <q-img
           class="col"
-          src="https://cdn.quasar.dev/img/parallax2.jpg"
+          src="https://www.gran-turismo.com/gtsport/livery/8791030872890410504_23.jpg"
         />
 
         <q-card-actions vertical class="justify-around">
@@ -105,10 +105,10 @@
       </q-card-section>
     </q-card>
     <q-card class="my-card">
-      <q-card-section horizontal>
+      <q-card-section horizontal class="col-12">
         <q-img
           class="col-5"
-          src="https://cdn.quasar.dev/img/parallax1.jpg"
+          src="https://s1.cdn.autoevolution.com/images/news/la-dodgers-outfielder-yasiel-puig-goes-super-custom-on-his-range-better-watch-out-92950_1.jpg"
         />
 
         <q-card-section>
@@ -132,10 +132,10 @@
       </q-card-actions>
     </q-card>
     <q-card class="my-card">
-      <q-card-section horizontal>
+      <q-card-section hhorizontal class="col-12">
         <q-img
           class="col-5"
-          src="https://cdn.quasar.dev/img/parallax1.jpg"
+          src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_s_02_m.jpg"
         />
 
         <q-card-section>
@@ -159,10 +159,10 @@
       </q-card-actions>
     </q-card>
     <q-card class="my-card">
-      <q-card-section horizontal>
+      <q-card-section horizontal class="col-12">
         <q-img
           class="col-5"
-          src="https://cdn.quasar.dev/img/parallax1.jpg"
+          src="https://image.cnbcfm.com/api/v1/image/106109046-1567519408144547317.jpg?v=1567519467&w=720&h=405"
         />
 
         <q-card-section>
@@ -186,10 +186,10 @@
       </q-card-actions>
     </q-card>
     <q-card class="my-card">
-      <q-card-section horizontal>
+      <q-card-section horizontal class="col-12">
         <q-img
           class="col-5"
-          src="https://cdn.quasar.dev/img/parallax1.jpg"
+          src="https://cdni.autocarindia.com/utils/imageresizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Hyundai-Grand-i10-Nios-200120231541.jpg&w=872&h=578&q=75&c=1"
         />
 
         <q-card-section>
@@ -206,10 +206,10 @@
       </q-card-actions>
     </q-card>
     <q-card class="my-card">
-      <q-card-section horizontal>
+      <q-card-section horizontal class="col-12">
         <q-img
           class="col-5"
-          src="https://cdn.quasar.dev/img/parallax1.jpg"
+          src="https://imgcdn.zigwheels.ph/large/gallery/exterior/27/701/porsche-911-front-angle-low-view-647614.jpg"
         />
 
         <q-card-section>
@@ -233,10 +233,10 @@
       </q-card-actions>
     </q-card>
     <q-card class="my-card">
-      <q-card-section horizontal>
+      <q-card-section horizontal class="col-12">
         <q-img
           class="col-5"
-          src="https://cdn.quasar.dev/img/parallax1.jpg"
+          src="https://images.autofun.ph/file/b4cc558dfcd849b69e6bd7d89c03eb23.jpg"
         />
 
         <q-card-section>
