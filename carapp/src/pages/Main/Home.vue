@@ -227,7 +227,7 @@
         <q-btn flat>
           7:00PM
         </q-btn>
-        <q-btn flat color="primary">
+        <q-btn flat color="primary" @click="navigateToSchedulingPage()">
           Reserve
         </q-btn>
       </q-card-actions>
