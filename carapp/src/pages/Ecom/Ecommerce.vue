@@ -3,11 +3,11 @@
           <q-card @click="$router.push('/details')" class="cursor-pointer" :class="class_val"
                   @mouseover="class_val='my-card shadow-20'"
                   @mouseleave="class_val='my-card shadow-'">
-            <q-img src="https://miipublications.com.my/wp-content/uploads/2019/10/shop-online-760x490.jpg"></q-img>
+            <q-img src="https://imgcdn.zigwheels.ph/large/gallery/exterior/27/701/porsche-911-front-angle-low-view-647614.jpg"></q-img>
             <q-card-section class="q-pb-xs q-pt-md">
               <div class="row no-wrap items-center">
                 <div class="col text-subtitle2 ellipsis-2-lines text-grey-10">
-                  Benling C200-BLK Smartwatch (Black Strap Free Size)
+                  Porsche (991)
                 </div>
                 <div class="col-auto text-grey text-caption q-pt-md row no-wrap items-center">
                 </div>
@@ -38,11 +38,11 @@
           <q-card @click="$router.push('/details')" class="cursor-pointer" :class="class_val"
                   @mouseover="class_val='my-card shadow-20'"
                   @mouseleave="class_val='my-card shadow-'">
-            <q-img src="https://miipublications.com.my/wp-content/uploads/2019/10/shop-online-760x490.jpg"></q-img>
+            <q-img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_s_02_m.jpg"></q-img>
             <q-card-section class="q-pb-xs q-pt-md">
               <div class="row no-wrap items-center">
                 <div class="col text-subtitle2 ellipsis-2-lines text-grey-10">
-                  Benling C200-BLK Smartwatch (Black Strap Free Size)
+                  Lamborghini orange(2019 model)
                 </div>
                 <div class="col-auto text-grey text-caption q-pt-md row no-wrap items-center">
                 </div>
