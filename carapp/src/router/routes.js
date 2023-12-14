@@ -39,7 +39,8 @@ const routes = [
     path:'/admin',
     component: () => import('layouts/Admin.vue'),
     children:[
-      { path: '/charts', component: () => import('pages/Main/Charts.vue') },
+      { path: '/charts', component: () => import('pages/Main/admin/Charts.vue') },
+      { path: '/tables', component: () => import('pages/Main/admin/Tables.vue') },
 
 
 

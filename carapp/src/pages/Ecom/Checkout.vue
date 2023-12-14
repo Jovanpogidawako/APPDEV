@@ -229,7 +229,7 @@
             <q-card-section class="col-5 flex flex-center">
               <q-img height="80px"
                      class="rounded-borders"
-                     src="https://cdn.quasar.dev/img/parallax2.jpg"
+                     src="https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&height=900&width=1600&fit=bounds"
               />
             </q-card-section>
             <q-card-section class="">
@@ -242,7 +242,7 @@
             <q-card-section class="col-5 flex flex-center">
               <q-img height="80px"
                      class="rounded-borders"
-                     src="https://cdn.quasar.dev/img/parallax2.jpg"
+                     src="https://imageio.forbes.com/specials-images/imageserve/6064b148afc9b47d022718d1/Hennessey-Venom-F5/960x0.jpg?height=473&width=711&fit=bounds"
               />
             </q-card-section>
             <q-card-section class="">
@@ -255,7 +255,7 @@
             <q-card-section class="col-5 flex flex-center">
               <q-img height="80px"
                      class="rounded-borders"
-                     src="https://cdn.quasar.dev/img/parallax2.jpg"
+                     src="https://carsome.my/news/wp-content/uploads/2022/10/Hyperion_XP1-3_4-studio.jpg"
               />
             </q-card-section>
             <q-card-section class="">
@@ -268,7 +268,7 @@
             <q-card-section class="col-5 flex flex-center">
               <q-img height="80px"
                      class="rounded-borders"
-                     src="https://cdn.quasar.dev/img/parallax2.jpg"
+                     src="https://i.ytimg.com/vi/tArC9-RHmU4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBkpy8j3fkxlbj32IemGrdnbbdYfA"
               />
             </q-card-section>
             <q-card-section class="">
