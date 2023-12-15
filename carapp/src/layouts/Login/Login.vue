@@ -65,7 +65,7 @@ export default {
     return {
       username: 'mayur',
       password: 'mayur@qu',
-      role: '', // Default role is user
+      role: 'user', // Default role is user
       remember_me: false,
       roleOptions: [
         { label: 'User', value: 'user' },
@@ -86,18 +86,27 @@ export default {
       this.$router.push('/for')
     },
     login() {
-    // Your login logic here
-    // After successful login, set user role (replace this with your actual login logic)
-    const userRole = 'user' // or 'admin'
-    // Redirect based on the role
-    if (userRole === 'user') {
-      this.$router.push('/')
-    } else if (userRole === 'admin') {
-      this.$router.push('/admin')
-    }
-  }
-}
-}
+      // Your login logic here
+      // For demonstration purposes, I'm using a placeholder for successful login
+      const successfulLogin = true; // Replace this with your actual login logic
+
+      if (successfulLogin) {
+        // Replace the placeholder with your actual logic to determine the user's role
+        const userRole = 'user'; // or 'user'
+
+        // Redirect based on the role
+        if (userRole === 'user') {
+          this.$router.push('/');
+        } else if (userRole === 'admin') {
+          this.$router.push('/home');
+        }
+      } else {
+        // Handle unsuccessful login (e.g., show an error message)
+        console.error('Login failed. Please check your credentials.');
+      }
+    },
+  },
+};
 </script>
 
 <style>

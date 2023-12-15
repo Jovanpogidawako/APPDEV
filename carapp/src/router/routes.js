@@ -11,9 +11,17 @@ const routes = [
       { path: '/track', component: () => import('pages/Main/Tracking.vue') },
       { path: '/mess', component: () => import('pages/Main/Messaging.vue') },
       { path: '/prof', component: () => import('pages/Main/my_profile.vue') },
-      { path: '/details', component: () => import('pages/Main/Details.vue') },
+      { path: '/details', component: () => import('pages/Details/Details.vue') },
       { path: '/check', component: () => import('pages/Ecom/Checkout.vue') },
       { path: '/cart', component: () => import('pages/Ecom/AddtoCart.vue') },
+      { path: '/det2', component: () => import('pages/Details/Details2.vue') },
+      { path: '/det3', component: () => import('pages/Details/Details3.vue') },
+      { path: '/det4', component: () => import('pages/Details/Details4.vue') },
+      { path: '/det5', component: () => import('pages/Details/Details5.vue') },
+      { path: '/det6', component: () => import('pages/Details/Details6.vue') },
+      { path: '/det7', component: () => import('pages/Details/Details7.vue') },
+      { path: '/det8', component: () => import('pages/Details/Details8.vue') },
+      { path: '/det9', component: () => import('pages/Details/Details9.vue') },
 
 
 

@@ -25,7 +25,7 @@
 
                   <q-checkbox class="text-grey-8" dense v-model="remember_me" label="Remember me"/>
                   <div>
-                    <q-btn class="text-capitalize" size="sm" style="width:75px" dense label="Login" to="/home" type="button" color="primary"/>
+                    <q-btn class="text-capitalize" size="sm" style="width:75px" dense label="Back to Login" to="/log" type="button" color="primary"/>
                     <q-btn @click="register" class="float-right text-blue-9 text-capitalize" size="sm" style="width:75px;border: 1px solid #36669e;" dense label="Sign Up" type="button"/>
                   </div>
                 </q-form>

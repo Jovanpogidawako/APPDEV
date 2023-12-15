@@ -33,7 +33,14 @@
           <q-card @click="$router.push('/check')" class="cursor-pointer" :class="class_val"
                   @mouseover="class_val='my-card shadow-20'"
                   @mouseleave="class_val='my-card shadow-'">
-            <q-img src="https://miipublications.com.my/wp-content/uploads/2019/10/shop-online-760x490.jpg"></q-img>
+            <q-img
+      v-for="(image, index) in images"
+      :key="index"
+      :src="image.src"
+      :alt="image.alt"
+      style="width: 100px; height: 100px;"
+      transition="fade"
+    />
 
             <q-card-section class="q-pb-xs q-pt-md">
               <!--<q-btn-->
