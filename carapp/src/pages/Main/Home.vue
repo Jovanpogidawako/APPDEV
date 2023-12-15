@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-md row items-start q-gutter-md">
+  <div class="fit row wrap justify-center items-start content-start">
     <q-card class="my-card" flat bordered  style="width: 700px; height: 200px">
       <q-card-section horizontal class="col-12">
         <q-card-section class="q-pt-xs">
