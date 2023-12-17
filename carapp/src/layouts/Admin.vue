@@ -72,6 +72,16 @@
           </q-item-section>
         </q-item>
       </q-list>
+      <q-list>
+        <q-item clickable v-ripple @click="navigateTo('/ecomer')">
+          <q-item-section avatar>
+            <q-icon name="access_time" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Ecommerce Management</q-item-label>
+          </q-item-section>
+        </q-item>
+      </q-list>
     </q-drawer>
     </q-drawer>
 
