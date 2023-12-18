@@ -17,9 +17,7 @@
             <q-card-section class="q-py-sm">
               <div>
                 <div class="text-caption text-green-8 text-weight-bolder">Special Price</div>
-                <span class="text-h6">₹3,149</span><span class="q-ml-sm text-grey-6"
-                                                         style="text-decoration: line-through">₹3,699</span>
-                <span class="q-ml-md text-caption text-green-8 text-weight-bolder q-mt-md">20% off</span>
+                <span class="text-h6">P1,345,699</span>
               </div>
             </q-card-section>
             <q-separator></q-separator>
@@ -47,9 +45,7 @@
             <q-card-section class="q-py-sm">
               <div>
                 <div class="text-caption text-green-8 text-weight-bolder">Special Price</div>
-                <span class="text-h6">₹3,149</span><span class="q-ml-sm text-grey-6"
-                                                         style="text-decoration: line-through">₹3,699</span>
-                <span class="q-ml-md text-caption text-green-8 text-weight-bolder q-mt-md">20% off</span>
+                <span class="text-h6">P100,699</span>
               </div>
             </q-card-section>
             <q-separator></q-separator>
@@ -76,9 +72,7 @@
             <q-card-section class="q-py-sm">
               <div>
                 <div class="text-caption text-green-8 text-weight-bolder">Special Price</div>
-                <span class="text-h6">₹3,149</span><span class="q-ml-sm text-grey-6"
-                                                         style="text-decoration: line-through">₹3,699</span>
-                <span class="q-ml-md text-caption text-green-8 text-weight-bolder q-mt-md">20% off</span>
+                <span class="text-h6">P783,699</span>
               </div>
             </q-card-section>
             <q-separator></q-separator>
@@ -104,9 +98,7 @@
             <q-card-section class="q-py-sm">
               <div>
                 <div class="text-caption text-green-8 text-weight-bolder">Special Price</div>
-                <span class="text-h6">₹3,149</span><span class="q-ml-sm text-grey-6"
-                                                         style="text-decoration: line-through">₹3,699</span>
-                <span class="q-ml-md text-caption text-green-8 text-weight-bolder q-mt-md">20% off</span>
+                <span class="text-h6">P123,699</span>
               </div>
             </q-card-section>
             <q-separator></q-separator>
@@ -133,9 +125,7 @@
             <q-card-section class="q-py-sm">
               <div>
                 <div class="text-caption text-green-8 text-weight-bolder">Special Price</div>
-                <span class="text-h6">₹3,149</span><span class="q-ml-sm text-grey-6"
-                                                         style="text-decoration: line-through">₹3,699</span>
-                <span class="q-ml-md text-caption text-green-8 text-weight-bolder q-mt-md">20% off</span>
+                <span class="text-h6">P345,699</span>
               </div>
             </q-card-section>
             <q-separator></q-separator>
@@ -162,9 +152,7 @@
             <q-card-section class="q-py-sm">
               <div>
                 <div class="text-caption text-green-8 text-weight-bolder">Special Price</div>
-                <span class="text-h6">₹3,149</span><span class="q-ml-sm text-grey-6"
-                                                         style="text-decoration: line-through">₹3,699</span>
-                <span class="q-ml-md text-caption text-green-8 text-weight-bolder q-mt-md">20% off</span>
+                <span class="text-h6">P243 699</span>
               </div>
             </q-card-section>
             <q-separator></q-separator>
@@ -191,9 +179,7 @@
             <q-card-section class="q-py-sm">
               <div>
                 <div class="text-caption text-green-8 text-weight-bolder">Special Price</div>
-                <span class="text-h6">₹3,149</span><span class="q-ml-sm text-grey-6"
-                                                         style="text-decoration: line-through">₹3,699</span>
-                <span class="q-ml-md text-caption text-green-8 text-weight-bolder q-mt-md">20% off</span>
+                <span class="text-h6">P998,699</span>
               </div>
             </q-card-section>
             <q-separator></q-separator>
@@ -220,9 +206,7 @@
             <q-card-section class="q-py-sm">
               <div>
                 <div class="text-caption text-green-8 text-weight-bolder">Special Price</div>
-                <span class="text-h6">₹3,149</span><span class="q-ml-sm text-grey-6"
-                                                         style="text-decoration: line-through">₹3,699</span>
-                <span class="q-ml-md text-caption text-green-8 text-weight-bolder q-mt-md">20% off</span>
+                <span class="text-h6">P453 699</span>
               </div>
             </q-card-section>
             <q-separator></q-separator>
@@ -249,9 +233,7 @@
             <q-card-section class="q-py-sm">
               <div>
                 <div class="text-caption text-green-8 text-weight-bolder">Special Price</div>
-                <span class="text-h6">₹3,149</span><span class="q-ml-sm text-grey-6"
-                                                         style="text-decoration: line-through">₹3,699</span>
-                <span class="q-ml-md text-caption text-green-8 text-weight-bolder q-mt-md">20% off</span>
+                <span class="text-h6">P234,699</span>
               </div>
             </q-card-section>
             <q-separator></q-separator>

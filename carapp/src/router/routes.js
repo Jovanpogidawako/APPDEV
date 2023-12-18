@@ -50,6 +50,7 @@ const routes = [
       { path: '/charts', component: () => import('pages/Main/admin/Charts.vue') },
       { path: '/tables', component: () => import('pages/Main/admin/Tables.vue') },
       { path: '/ecomer', component: () => import('pages/Main/admin/Ecom.vue') },
+      { path: '/contact', component: () => import('pages/Main/admin/Messaging.vue') },
 
 
 

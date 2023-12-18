@@ -57,12 +57,6 @@
 
       <q-card-actions>
         <q-btn flat round icon="event" />
-        <q-btn flat>
-          5:30PM
-        </q-btn>
-        <q-btn flat>
-          7:00PM
-        </q-btn>
         <q-btn flat color="primary" @click="navigateToSchedulingPage()">
           Reserve
         </q-btn>
@@ -85,12 +79,6 @@
 
       <q-card-actions>
         <q-btn flat round icon="event" />
-        <q-btn flat>
-          5:30PM
-        </q-btn>
-        <q-btn flat>
-          7:00PM
-        </q-btn>
         <q-btn flat color="primary" @click="navigateToSchedulingPage()" >
           Reserve
         </q-btn>
@@ -113,12 +101,6 @@
 
       <q-card-actions>
         <q-btn flat round icon="event" />
-        <q-btn flat>
-          5:30PM
-        </q-btn>
-        <q-btn flat>
-          7:00PM
-        </q-btn>
         <q-btn flat color="primary" @click="navigateToSchedulingPage()" >
           Reserve
         </q-btn>
@@ -137,12 +119,6 @@
       </q-card-section>
       <q-card-actions>
         <q-btn flat round icon="event" />
-        <q-btn flat>
-          5:30PM
-        </q-btn>
-        <q-btn flat>
-          7:00PM
-        </q-btn>
         <q-btn flat color="primary" @click="navigateToSchedulingPage()" >
           Reserve
         </q-btn>
@@ -161,12 +137,6 @@
       </q-card-section>
       <q-card-actions>
         <q-btn flat round icon="event" />
-        <q-btn flat>
-          5:30PM
-        </q-btn>
-        <q-btn flat>
-          7:00PM
-        </q-btn>
         <q-btn flat color="primary" @click="navigateToSchedulingPage()" >
           Reserve
         </q-btn>
@@ -185,12 +155,6 @@
       </q-card-section>
       <q-card-actions>
         <q-btn flat round icon="event" />
-        <q-btn flat>
-          5:30PM
-        </q-btn>
-        <q-btn flat>
-          7:00PM
-        </q-btn>
         <q-btn flat color="primary">
           Reserve
         </q-btn>
@@ -209,12 +173,6 @@
       </q-card-section>
       <q-card-actions>
         <q-btn flat round icon="event" />
-        <q-btn flat>
-          5:30PM
-        </q-btn>
-        <q-btn flat>
-          7:00PM
-        </q-btn>
         <q-btn flat color="primary">
           Reserve
         </q-btn>

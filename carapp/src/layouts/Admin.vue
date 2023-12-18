@@ -34,7 +34,7 @@
 
   <q-space />
   <q-btn
-    to="/mess"
+    to="/contact"
     tag="router-link"
     round
     flat
@@ -56,29 +56,29 @@
       <q-drawer v-model="leftDrawerOpen" side="left" overlay behavior="mobile" bordered>
       <q-item clickable v-ripple @click="navigateTo('/charts')">
           <q-item-section avatar>
-            <q-icon name="charts" />
+            <q-icon name="insert_chart" />
           </q-item-section>
           <q-item-section>
             <q-item-label>Charts</q-item-label>
           </q-item-section>
         </q-item>
       <q-list>
-        <q-item clickable v-ripple @click="navigateTo('/sched')">
+        <q-item clickable v-ripple @click="navigateTo('/ecomer')">
           <q-item-section avatar>
-            <q-icon name="access_time" />
+            <q-icon name="store" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Scheduling</q-item-label>
+            <q-item-label>Ecommerce Management</q-item-label>
           </q-item-section>
         </q-item>
       </q-list>
       <q-list>
-        <q-item clickable v-ripple @click="navigateTo('/ecomer')">
+        <q-item clickable v-ripple @click="navigateTo('/tables')">
           <q-item-section avatar>
-            <q-icon name="access_time" />
+            <q-icon name="check" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Ecommerce Management</q-item-label>
+            <q-item-label>Tables</q-item-label>
           </q-item-section>
         </q-item>
       </q-list>
